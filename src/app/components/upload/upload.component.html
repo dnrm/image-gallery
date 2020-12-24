@@ -1,0 +1,11 @@
+<div class="form">
+    <form #uploadForm="ngForm" (ngSubmit)="onSubmit(uploadForm)">   
+        <h1>Upload photo</h1>
+        <label for="file">Image</label>
+        <input type="file" name="file" placeholder="Upload Image" [ngModel]="" #file="ngModel" (change)="onFileSelect($event)" multiple="multiple">
+        <input type="submit" value="Submit">
+    </form>
+    <div class="response">
+        <p id="response"></p>
+    </div>
+</div>
