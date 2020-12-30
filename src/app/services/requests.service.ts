@@ -11,6 +11,6 @@ export class RequestsService {
   constructor(private http: HttpClient) { }
 
   getImages() {
-    return this.http.get(`http://${location.hostname}/api/get-image-urls`);
+    return this.http.get(`http://${location.hostname}/app/api/get-image-urls`);
   }
 }

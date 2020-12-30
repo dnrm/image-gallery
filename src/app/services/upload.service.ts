@@ -6,7 +6,7 @@ export class UploadService {
     public url: string;
 
     constructor() {
-        this.url = `http://${location.hostname}/api/upload`;
+        this.url = `http://${location.hostname}/app/api/upload`;
     }
 
     uploadFile(url: string, params: Array<string>, files: Array<File>, name: string) { // url to upload to, parameters aka headers, files are the files from the form and name is the name of the field in the form

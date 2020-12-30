@@ -16,7 +16,7 @@ export class UploadComponent implements OnInit {
   public status: string;
 
   constructor(private uploadService: UploadService) {
-    this.url = `http://${location.hostname}/api/upload`;
+    this.url = `http://${location.hostname}/app/api/upload`;
   }
 
   ngOnInit(): void {
